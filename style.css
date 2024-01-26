@@ -13,15 +13,12 @@ body {
 
 /* Container */
 .container {
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
 
 .container > div {
     border: 1px solid green;
-    /* height: 20rem; */
-    /* width: 20rem; */
 }
 
 /* Header */
@@ -51,11 +48,8 @@ body {
 /* Main */
 .main {
     display: grid;
-    grid-template-columns: 4fr 1fr;
-}
-
-.projects {
-    grid-row: 1 / 3;
+    grid-template-columns: 3fr 1fr;
+    gap: 1.5rem;
 }
 
 .card {
