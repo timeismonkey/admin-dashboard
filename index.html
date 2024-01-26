@@ -10,23 +10,145 @@
     <div class="container">
 
       <div class="header">
-        <div class="search-bar"></div>
-        <div class="profile-nav"></div>
-        <div class="user-greeting"></div>
-        <div class="post"></div>
+        <div class="search-bar">
+            <svg id="mag-glass" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+            <input type="search" name="search" id="search">
+        </div>
+        <div class="profile-nav">
+            <svg class="bell" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg>
+            <div class="profile-pic small">
+                <p>Img</p>
+            </div>
+            <div class="user">
+                Jerry Hara
+            </div>
+        </div>
+        <div class="user-greeting">
+            <div class="profile-pic big">
+                <p>Img</p>
+            </div>
+            <div class="greeting-message">
+                <p>
+                    Hi there,
+                    <span class="username">Jerry Hara (@jerry)</span> 
+                </p>
+            </div>
+        </div>
+        <div class="post">
+            <button class="post-button" id="new">New</button>
+            <button class="post-button" id="upload">Upload</button>
+            <button class="post-button" id="share">Share</button>
+        </div>
       </div>
 
       <div class="side-bar">
-        <div class="logo"></div>
-        <div class="nav"></div>
-        <div class="settings"></div>
+        <div class="logo">
+            <svg  id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 3C2.55 3 3 3.45 3 4V13H5V5C5 4.45 5.45 4 6 4C6.55 4 7 4.45 7 5V13H9V6C9 5.45 9.45 5 10 5C10.55 5 11 5.45 11 6V13H12.5C12.67 13 12.84 13 13 13.05V7C13 6.45 13.45 6 14 6C14.55 6 15 6.45 15 7V15.5C15 16.88 13.88 18 12.5 18H11.5C11.22 18 11 18.22 11 18.5C11 18.78 11.22 19 11.5 19H17V8C17 7.45 17.45 7 18 7C18.55 7 19 7.45 19 8V19H21V9C21 8.45 21.45 8 22 8C22.55 8 23 8.45 23 9V20C23 20.55 22.55 21 22 21H11.5C10.12 21 9 19.88 9 18.5C9 17.12 10.12 16 11.5 16H12.5C12.78 16 13 15.78 13 15.5C13 15.22 12.78 15 12.5 15H2C1.45 15 1 14.55 1 14V4C1 3.45 1.45 3 2 3Z" /></svg>
+            <p id="dashboard">Dashboard</p>
+        </div>
+        <div class="nav">
+            <div class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,3L20,9V21H15V14H9V21H4V9L12,3Z" /></svg>
+                <p>Home</p>
+            </div>
+            <div class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,3L20,9V21H15V14H9V21H4V9L12,3Z" /></svg>
+                <p>Profile</p>
+            </div>
+            <div class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,3L20,9V21H15V14H9V21H4V9L12,3Z" /></svg>
+                <p>Messages</p>
+            </div>
+            <div class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,3L20,9V21H15V14H9V21H4V9L12,3Z" /></svg>
+                <p>History</p>
+            </div>
+            <div class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,3L20,9V21H15V14H9V21H4V9L12,3Z" /></svg>
+                <p>Tasks</p>
+            </div>
+            <div class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,3L20,9V21H15V14H9V21H4V9L12,3Z" /></svg>
+                <p>Communities</p>
+            </div>
+        </div>
+        <div class="settings">
+            <div class="settings-items">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,3L20,9V21H15V14H9V21H4V9L12,3Z" /></svg>
+                <p>Settings</p>
+            </div>
+            <div class="settings-items">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,3L20,9V21H15V14H9V21H4V9L12,3Z" /></svg>
+                <p>Support</p>
+            </div>
+            <div class="settings-items">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,3L20,9V21H15V14H9V21H4V9L12,3Z" /></svg>
+                <p>Privacy</p>
+            </div>
+        </div>
       </div>
 
       <div class="main">
-        <div class="projects"></div>
-        <div class="announcements"></div>
+        <div class="projects">
+            <div class="card">
+                <p class="title">title</p>
+                <p>Some words</p>
+            </div>
+            <div class="card">
+                <p class="title">title</p>
+                <p>Some words</p>
+            </div>
+            <div class="card">
+                <p class="title">title</p>
+                <p>Some words</p>
+            </div>
+            <div class="card">
+                <p class="title">title</p>
+                <p>Some words</p>
+            </div>
+            <div class="card">
+                <p class="title">title</p>
+                <p>Some words</p>
+            </div>
+            <div class="card">
+                <p class="title">title</p>
+                <p>Some words</p>
+            </div>
+        </div>
+        <div class="announcements">
+            <div class="announcement">
+                <p class="announce-title">Announcement</p>
+                <p>Some words</p>
+            </div>
+            <div class="announcement">
+                <p class="announce-title">Announcement</p>
+                <p>Some words</p>
+            </div>
+            <div class="announcement">
+                <p class="announce-title">Announcement</p>
+                <p>Some words</p>
+            </div>
+        </div>
+        <div class="trending">
+            <div class="trend">
+                <p class="trending-user">@loser</p>
+                <p>Best user out there</p>
+            </div>
+            <div class="trend">
+                <p class="trending-user">@loser</p>
+                <p>Best user out there</p>
+            </div>
+            <div class="trend">
+                <p class="trending-user">@loser</p>
+                <p>Best user out there</p>
+            </div>
+            <div class="trend">
+                <p class="trending-user">@loser</p>
+                <p>Best user out there</p>
+            </div>
+        </div>
       </div>
-      
+
     </div>
   </body>
 </html>
