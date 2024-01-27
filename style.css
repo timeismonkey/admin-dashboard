@@ -1,91 +1,112 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
 :root {
   box-sizing: border-box;
+  --main-font-family: 'Roboto', sans-serif;
+  --primary-color: #f97316;
+  --seconday-color: #fed7aa;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-    margin: 0;
+  margin: 0;
+  font-family: var(--main-font-family);
 }
 
 /* Container */
 .container {
-    display: grid;
-    grid-template-columns: minmax(250px, 1fr) 5fr;
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) 5fr;
 }
 
 /* Header */
 .header {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 2rem 1rem;
-    padding: 1rem 1.5rem 1rem 1.5rem;
-    background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem 1rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  background-color: var(--seconday-color);
 }
 
 /* Side-bar */
 .side-bar {
-    grid-row: 1 / 3;
-    display: grid;
-    grid-template-rows: auto auto 2fr;
-    gap: 2rem;
-    padding: 1rem;
-    background-color: aqua;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: auto auto 2fr;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 #logo {
-    height: 60px;
-    width: 60px;
+  height: 60px;
+  width: 60px;
+  fill: white;
 }
 
 #dashboard {
-    font-size: 1.9rem;
-    vertical-align: middle;
+  font-size: 1.9rem;
+  vertical-align: middle;
 }
 
 /* Nav */
-.nav, .settings {
-    padding-left: 1rem;
+.nav,
+.settings {
+  padding-left: 1rem;
 }
 
-.nav-item, .settings-item {
-    padding: .5rem 0;
+.nav-item,
+.settings-item {
+  padding: 0.5rem 0;
 }
 
-.nav-item > span {
-    vertical-align: bottom;
-}
-
-.nav-item > svg, .settings-item > svg {
-    height: 1.2rem;
-    width: 1.2rem;
-    padding-right: .5rem;
-    vertical-align: bottom;
+.nav-icon,
+.settings-icon {
+  height: 1.4rem;
+  width: 1.4rem;
+  padding-right: 0.5rem;
+  vertical-align: bottom;
+  fill: white;
 }
 
 /* Main */
 .main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1.5rem;
+  background-color: #d4d4d4;
 }
 
 .projects {
-    display: grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .card {
-    height: 150px;
+  height: 175px;
 }
 
 /* info-container */
 .info-container {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
+  display: grid;
 }
