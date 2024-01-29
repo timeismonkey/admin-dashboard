@@ -137,6 +137,10 @@ body {
 
 }
 
+.projects {
+    grid-row: span 2;
+}
+
  .card-container, .announcements-container {
     margin-top: 1rem;
  }
@@ -145,10 +149,6 @@ body {
     box-shadow: var(--primary-box-shadow);
     border-radius: var(--primary-border-radius);
  }
-
-.projects {
-    grid-row: span 2;
-}
 
 .card-container {
     display: grid;
