@@ -9,8 +9,9 @@
     --primary-color: #f97316;
     --seconday-color: #fed7aa;
     --primary-background-color: #d4d4d4;
-    --card-font-size: 13px;
-    --card-font-color: #706f6f;
+    --main-primary-font-size: 13px;
+    --main-small-font-size: 10px;
+    --main-primary-font-color: #706f6f;
     --primary-box-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
     --primary-border-radius: 5px;
 }
@@ -29,6 +30,11 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+hr {
+    border-top: 1px solid var(--main-primary-font-color);
+    border-bottom: 0;
 }
 
 body {
@@ -143,15 +149,22 @@ body {
     margin-top: 1rem;
  }
 
+ .announcements-container, .trending-container {
+    padding: 1rem;
+ }
+
  .card, .announcements-container, .trending-container {
     box-shadow: var(--primary-box-shadow);
     border-radius: var(--primary-border-radius);
     background-color: white;
  }
 
- .card-text, .trend-text {
-    font-size: var(--card-font-size);
-    color: var(--card-font-color);
+.card-text, .trend-text {
+    font-size: var(--main-primary-font-size);
+}
+
+.card-text, .announcement-text, .trend-text {
+    color: var(--main-primary-font-color);
     font-weight: 100;
 }
 
@@ -182,7 +195,6 @@ body {
 
 .actions {
     align-self: end;
-
 }
 
 .action-icon {
@@ -193,28 +205,26 @@ body {
 }
 
 /* .annoucements */
-/* .announcements {
-    display: flex;
-    flex-direction: column;
-} */
-
 .announcements-container {
-    /* flex: 1; */
-    display: grid;
-    padding: 1rem;
-}
-
-/* .trending */
-/* .trending {
-    display: flex;
-    flex-direction: column;
-} */
-
-.trending-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 1rem;
+}
+
+.announcement-title {
+    font-weight: 1000;
+    font-size: 15px;
+}
+
+.announcement-text {
+    font-size: var(--main-small-font-size);
+}
+
+/* .trending */
+.trending-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .trend {
@@ -222,7 +232,7 @@ body {
     gap: 10px;
 }
 
-.trending-profile-pic {
+.trend-profile-pic {
     height: 40px;
     width: 40px;
     vertical-align: bottom;
