@@ -184,12 +184,13 @@ body {
 
 .actions {
     align-self: end;
-    /* margin-top: 20px; */
+
 }
 
 .action-icon {
     height: 20px;
     width: 20px;
+    margin-right: 1rem;
     vertical-align: bottom;
 }
 
