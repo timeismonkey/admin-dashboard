@@ -185,10 +185,9 @@ body {
     padding: 0.5rem 0;
 }
 
-.nav-icon,
-.settings-icon {
-    height: 1.4rem;
-    width: 1.4rem;
+.side-bar-icon {
+    height: 1.7rem;
+    width: 1.7rem;
     padding-right: 0.5rem;
     vertical-align: bottom;
     fill: white;
