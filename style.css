@@ -9,11 +9,12 @@
     --primary-color: #f97316;
     --seconday-color: #fed7aa;
     --primary-background-color: #d4d4d4;
+    --primary-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    --primary-border-radius: 5px;
+    --side-bar-font-size: 1.1rem;
     --main-primary-font-size: 13px;
     --main-small-font-size: 10px;
     --main-primary-font-color: #706f6f;
-    --primary-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    --primary-border-radius: 5px;
 }
 
 * {
@@ -37,6 +38,20 @@ hr {
     border-bottom: 0;
 }
 
+.profile-pic-small {
+    height: 40px;
+    width: 40px;
+}
+
+.greeting-message,
+.profile-nav-user,
+.greeting-username,
+.post-button,
+.card-title,
+.announcement-title {
+    font-weight: 1000;
+}
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -58,12 +73,12 @@ body {
     grid-template-columns: 1fr auto;
     gap: 2rem 1rem;
     align-items: center;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem;
     background-color: var(--seconday-color);
     box-shadow: var(--primary-box-shadow);
 }
 
-/* .search-bar */
+/* Search-bar */
 #mag-glass {
     vertical-align: middle;
     margin-right: 5px;
@@ -77,11 +92,9 @@ body {
     width: 45%;
     height: 2rem;
     border-radius: 1rem;
-    color: var(--primary-background-color);
-    background-color: var(--primary-background-color);
 }
 
-/* .profile-nav */
+/* Profile-nav */
 .profile-nav {
     display: flex;
     justify-content: end;
@@ -89,17 +102,7 @@ body {
     gap: 14px;
 }
 
-.profile-pic-small {
-    height: 40px;
-    width: 40px;
-}
-
-.profile-nav-user {
-    font-size: 15px;
-    font-weight: 1000;
-}
-
-/* .user-greeting */
+/* User-greeting */
 .user-greeting {
     display: flex;
     align-items: end;
@@ -113,14 +116,17 @@ body {
 
 .greeting-message {
     align-self: center;
-    font-weight: 1000;
 }
 
 .greeting {
     font-size: 11px;
 }
 
-/* .post */
+.greeting-username {
+    font-size: 1.3rem;
+}
+
+/* Post */
 .post {
     justify-self: end;
     display: flex;
@@ -134,7 +140,6 @@ body {
     border: none;
     border-radius: 1rem;
     padding: 8px 2rem;
-    font-weight: 1000;
 }
 
 /*----------  Side-bar  ----------*/
@@ -146,10 +151,11 @@ body {
     padding: 1rem;
     background-color: var(--primary-color);
     color: white;
-    font-size: 1.1rem;
+    font-size: var(--side-bar-font-size);
     font-weight: 600;
 }
 
+/* Logo */
 .logo {
     display: flex;
     justify-content: center;
@@ -162,13 +168,13 @@ body {
     fill: white;
 }
 
-#dashboard {
+.logo-text {
     font-size: 1.6rem;
     vertical-align: middle;
     align-self: center;
 }
 
-/* Nav */
+/* Nav & Settings */
 .nav,
 .settings {
     padding-left: 1rem;
@@ -189,14 +195,6 @@ body {
 }
 
 /*----------  Main  ----------*/
-.main {
-    align-self: start;
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    gap: 1.5rem;
-    padding: 1.5rem 2rem 1.5rem 1rem;
-}
-
 .main-headers {
     font-size: 1.2rem;
     font-weight: 700;
@@ -222,7 +220,8 @@ body {
 }
 
 .card-text,
-.trend-text {
+.announcement-title,
+.trend {
     font-size: var(--main-primary-font-size);
 }
 
@@ -233,7 +232,15 @@ body {
     font-weight: 100;
 }
 
-/* .projects */
+.main {
+    align-self: start;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem 1.5rem 1rem;
+}
+
+/* Projects */
 .projects {
     grid-row: span 2;
     display: flex;
@@ -254,10 +261,6 @@ body {
     padding: 1.5rem;
 }
 
-.card-title {
-    font-weight: 1000;
-}
-
 .actions {
     align-self: end;
 }
@@ -269,23 +272,18 @@ body {
     vertical-align: bottom;
 }
 
-/* .annoucements */
+/* Annoucements */
 .announcements-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.announcement-title {
-    font-weight: 1000;
-    font-size: 15px;
-}
-
 .announcement-text {
     font-size: var(--main-small-font-size);
 }
 
-/* .trending */
+/* Trending */
 .trending-container {
     display: flex;
     flex-direction: column;
@@ -299,8 +297,4 @@ body {
 
 .trend-content {
     align-self: center;
-}
-
-.trend-user {
-    font-size: var(--card-font-size);
 }
