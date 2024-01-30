@@ -6,13 +6,13 @@ Admin Dashboard is a generic dashboard with three main sections: header, side-ba
 
 
 ## Usage
-### Header:
+### Header
 Made up of 4 separate sections: search, profile navigation, user greeting and a post section
 
-### Side-bar:
+### Side-bar
 Made up of 3 sections: logo, navigation and settings
 
-### Main:
+### Main
 Made up of 3 sections: projects, announcements and trending. Projects portrays the user's projects in separate cards and has 3 interaction buttons tied to each card.
 
 ## Learining Objectives
@@ -22,7 +22,7 @@ My main objective for this project was learning how to work with grid. Grid was 
 Jerry Hara (Github: @timeismonkey)
 
 ### Icons
-Source:**bold** https://pictogrammers.com/library/mdi/
+**Source:** https://pictogrammers.com/library/mdi/
 
 ### Fonts
-Source:**bold** https://fonts.google.com/specimen/Roboto
+**Source:** https://fonts.google.com/specimen/Roboto
