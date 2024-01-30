@@ -262,6 +262,7 @@ body {
 
 .actions {
     align-self: end;
+    margin-top: 1rem;
 }
 
 .action-icon {
