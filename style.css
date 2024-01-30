@@ -202,6 +202,11 @@ body {
     padding: 1.5rem 2rem 1.5rem 1rem;
 }
 
+.main-headers {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
 .card-container, .announcements-container, .trending-container {
     margin-top: 1rem;
  }
