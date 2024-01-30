@@ -207,8 +207,9 @@ body {
 }
 
 .announcements-container,
-.trending-container {
-    padding: 1rem;
+.trending-container,
+.card {
+    padding: 1.5rem;
 }
 
 .card,
@@ -258,7 +259,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.5rem;
 }
 
 .actions {
